@@ -1,0 +1,31 @@
+{
+    "name": "minhaz/laravel-unique-slug",
+    "description": "laravel uniq slug generator",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Minhaz\\LaravelUniqueSlug\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Minhaz",
+            "email": "minhazul.taher@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Minhaz\\LaravelUniqueSlug\\UniqueSlugServiceProvider"
+            ],
+            "aliases": {
+                "UniqueSlug": "Minhaz\\LaravelUniqueSlug\\UniqueSlug"
+            }
+        }
+    }
+}
